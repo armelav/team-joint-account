@@ -17,6 +17,9 @@ main {
 .mb-40 {
 	margin-bottom: 40px;
 }
+.mb-60 {
+	margin-bottom: 60px;
+}
 
 .float-right {
 	float: right;
@@ -31,5 +34,18 @@ main {
 	left: 0;
 	bottom: 0;
 	width: 100%;
-	padding: 40px;
+	padding: 30px 40px 40px 40px;
+	background: white;
+}
+
+.buttons {
+	width: 100%;
+	padding: 30px 20px 20px 20px;
+}
+
+#myChart {
+	margin-bottom: 20px;
+	width: 250px !important;
+	height: 250px !important;
+	text-align: center;
 }
