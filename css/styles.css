@@ -17,3 +17,19 @@ main {
 .mb-40 {
 	margin-bottom: 40px;
 }
+
+.float-right {
+	float: right;
+}
+
+.font-bold {
+	font-weight: bold;
+}
+
+.bottom-buttons {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	padding: 40px;
+}
