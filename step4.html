@@ -53,40 +53,52 @@
 		</nav>
 
 		<main>
-			<h1 class="mb-30">Invite collaborator(s)</h1>
+			<h1 class="mb-30">Propose split</h1>
 
-			<h3>Saved contact</h3>
-			<div class="form-group">
-				<input type="text" class="form-control" placeholder="Search contacts" id="inputDefault" />
-			</div>
+			<p>Proposed copy lorem ipsum blah blah</p>
 
-			<h3>Someone new</h3>
-
-			<div class="form-group">
-				<input type="text" class="form-control" placeholder="Full name" id="inputDefault2" />
-			</div>
-			<div class="form-group">
-				<input type="text" class="form-control" placeholder="Email" id="inputDefault3" />
-			</div>
-			<div class="form-group">
-				<input type="text" class="form-control" placeholder="Phone number" id="inputDefault4" />
-			</div>
-			<div class="form-group">
-				<input
-					type="text"
-					class="form-control"
-					placeholder="Relationship to you"
-					id="inputDefault5"
-				/>
+			<div class="card text-white bg-success mb-3">
+				<div class="card-header">Expense category 1</div>
+				<div class="card-body">
+					<div class="form-group">
+						<label class="col-form-label" for="input1">You:</label>
+						<input type="text" class="form-control" placeholder="%" id="input1" />
+					</div>
+					<div class="form-group">
+						<label class="col-form-label" for="input2">*Collaber name*</label>
+						<input type="text" class="form-control" placeholder="%" id="input2" />
+					</div>
+				</div>
+				<canvas id="myChart" width="200" height="200"></canvas>
 			</div>
 
-			<div class="bottom-buttons">
+			<div class="buttons">
 				<button type="button" class="btn btn-danger">Cancel</button>
-				<button type="button" class="btn btn-success float-right">Next: Set up</button>
+				<a href="step5.html" class="btn btn-success float-right">Next: View summary</a>
 			</div>
 		</main>
 
 		<!-- keep at the bottom -->
 		<script src="js/scripts.js"></script>
+
+		<script>
+			var ctx = document.getElementById("myChart").getContext("2d");
+			var myChart = new Chart(ctx, {
+				type: "pie",
+				data: {
+					labels: ["Person 1", "Person 2"],
+					datasets: [
+						{
+							label: "Split in %",
+							data: [60, 40],
+							backgroundColor: ["rgba(255, 99, 132, 1)", "rgba(54, 162, 235, 1)"],
+							borderColor: ["rgba(255, 99, 132, 1)", "rgba(54, 162, 235, 1)"],
+							borderWidth: 1,
+						},
+					],
+				},
+				options: {},
+			});
+		</script>
 	</body>
 </html>
