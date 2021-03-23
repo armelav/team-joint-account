@@ -1,1 +1,19 @@
 /* any custom styles */
+main {
+	max-width: 640px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.mb-10 {
+	margin-bottom: 10px;
+}
+.mb-20 {
+	margin-bottom: 20px;
+}
+.mb-30 {
+	margin-bottom: 30px;
+}
+.mb-40 {
+	margin-bottom: 40px;
+}
