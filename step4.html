@@ -6,7 +6,8 @@
 		<meta name="description" content="The new joint account app" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="css/bootstrap.css" />
-		<link rel="stylesheet" href="css/styles.css" />
+		<link rel="stylesheet" href="css/styles.css" />		
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 	</head>
 
 	<body class="withStickyFooter">
@@ -43,15 +44,15 @@
 		</nav>
 
 		<main>
-			<h1 class="mb-30">New Co-Count</h1>
+			<h1 class="mb-30">New Co-count</h1>
 
 			<div class="form-group mb-30">
-				<label class="col-form-label" for="input0">What's your Co-Count called?</label>
+				<label class="col-form-label" for="input0">New Co-count name</label>
 				<input type="text" class="form-control" placeholder="Me and the other half" id="input0" />
 			</div>
 
 			<div class="card bg-light mb-3">
-				<div class="card-header">Propose expense split</div>
+				<div class="card-header">Proposed expense split</div>
 				<div class="card-body">
 					<div class="form-group split-group">
 						<label class="col-form-label" for="input1">My contribution:</label>
@@ -73,11 +74,14 @@
 					</div>
 				</div>
 				<canvas id="myChart" width="400" height="200"></canvas>
+				<div class="form-group">
+					<p><a><span class="material-icons" style="position:relative; top:6px;">&#xe148;</span> Add an exception to this split</a></p>
+				</div>				
 			</div>
 
 			<div class="bottom-buttons">
 				<a href="index.html" type="button" class="btn btn-danger">Cancel</a>
-				<a href="step4b.html" class="btn btn-success float-right">Confirm & Send request &raquo;</a>
+				<a href="step4b.html" class="btn btn-success float-right">Send request &raquo;</a>
 			</div>
 		</main>
 

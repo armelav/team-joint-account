@@ -138,6 +138,10 @@ table.historyTable {
 }
 table.historyTable td {
 	padding-bottom: 10px;
+	text-align:center;
+}
+table.historyTable td .right {
+	float: right;
 }
 .tableDate {
 	display: block;
@@ -210,9 +214,6 @@ body.withStickyFooter {
 	font-size: 16px;
 	color: #251605;
 }
-
-
-
 
 /* general background colours */
 .bg-medium {
