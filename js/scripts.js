@@ -1,5 +1,4 @@
 /* Slide nav */
-
 var toggler = document.querySelector(".navbar-toggler");
 toggler.addEventListener("click", function () {
 	var nav = document.querySelector(".navbar-collapse");
@@ -9,6 +8,29 @@ toggler.addEventListener("click", function () {
 	} else {
 		nav.classList.add("collapse");
 	}
+});
+
+/* collapse */
+
+document.addEventListener("click", function (event) {
+	if (!event.target.classList.contains("expandable-btn")) return;
+
+	var content = document.querySelector("#" + event.target.getAttribute("data-id"));
+	if (!content) return;
+
+	event.preventDefault();
+
+	if (content.classList.contains("hidden")) {
+		content.classList.remove("hidden");
+		return;
+	}
+
+	var accordions = document.querySelectorAll(".expandable-content.hidden");
+	for (var i = 0; i < accordions.length; i++) {
+		accordions[i].classList.remove("hidden");
+	}
+
+	content.classList.toggle("hidden");
 });
 
 /*!

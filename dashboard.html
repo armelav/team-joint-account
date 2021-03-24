@@ -36,7 +36,9 @@
 						<a class="nav-link" href="step2.html">Create joint fund account</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Collaboration requests</a>
+						<a class="nav-link" href="#"
+							>Collaboration requests <span class="badge badge-light badge-pill">1</span></a
+						>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#">View joint fund accounts</a>
@@ -45,14 +47,28 @@
 						<a class="nav-link" href="#">Preferences</a>
 					</li>
 				</ul>
-				<form class="form-inline my-2 my-lg-0">
-					<input class="form-control mr-sm-2" type="text" placeholder="Search" />
-					<button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-				</form>
 			</div>
 		</nav>
 
 		<main>
+
+			<div class="card text-white bg-secondary mb-40" >
+				<div class="card-header">My Cocoa Balance</div>
+				<div class="card-body">
+					<h4 class="card-title">£1250.00</h4>
+				</div>
+			</div>
+
+			<h5>My Co-counts</h5>
+			<div class="card bg-light mb-3" >
+				<div class="card-header expandable-btn" data-id="account1"">Me and the other half</div>
+				<div class="card-body expandable-content hidden" id="account1">
+					<h4 class="card-title">£1250.00</h4>
+					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				</div>
+			</div>
+
+
 			<div class="bottom-buttons">
 				<button type="button" class="link">Home</button>
 				<button type="button" class="link">New</button>
@@ -62,5 +78,6 @@
 
 		<!-- keep at the bottom -->
 		<script src="js/scripts.js"></script>
+
 	</body>
 </html>

@@ -49,3 +49,11 @@ main {
 	height: 250px !important;
 	text-align: center;
 }
+
+.hidden {
+	display: none;
+}
+
+.expandable-btn {
+	cursor: pointer;
+}
