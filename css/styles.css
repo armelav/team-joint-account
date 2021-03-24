@@ -34,7 +34,7 @@ main {
 	left: 0;
 	bottom: 0;
 	width: 100%;
-	padding: 30px 40px 40px 40px;
+	padding: 20px 40px 20px 40px;
 	background: white;
 }
 
@@ -79,12 +79,19 @@ main {
 	padding-left: 30%;
 }
 
-.bottom-buttons.icons button, .bottom-buttons.icons button span{
+.bottom-buttons.icons button,
+.bottom-buttons.icons button span {
 	color: #251605;
 }
 
 .bottom-buttons.icons button {
 	background-color: #fff;
+	margin-left: 12px;
+}
+
+.bottom-buttons.icons button:first-child {
+	background-color: #fff;
+	margin-left: 0;
 }
 
 .bottom-buttons.icons button.selected {
@@ -92,7 +99,7 @@ main {
 	color: #307351;
 }
 
-.bottom-buttons.icons button.selected span{
+.bottom-buttons.icons button.selected span {
 	color: #307351;
 }
 
@@ -193,6 +200,10 @@ table.historyTable td {
 }
 .container img {
 	vertical-align: middle;
+}
+
+body.withStickyFooter {
+	padding-bottom: 80px;
 }
 
 .bg-primary {
