@@ -208,7 +208,10 @@ body.withStickyFooter {
 
 .jumbotron a {
 	font-size: 16px;
+	color: #251605;
 }
+
+
 
 
 /* general background colours */
@@ -223,4 +226,8 @@ body.withStickyFooter {
 }
 .card-header, .card-body {
 	color: #251605;
+}
+
+.expandable-content select {
+	padding-left: 3px;
 }
