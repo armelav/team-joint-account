@@ -209,3 +209,7 @@ body.withStickyFooter {
 .bg-primary {
 	background-color: #251605 !important;
 }
+
+.expandable-content select {
+	padding-left: 3px;
+}
