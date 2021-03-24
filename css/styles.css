@@ -60,7 +60,7 @@ main {
 	text-align: centre;
 	float: left;
 }
-.split-group input {
+.split-group .input-group {
 	width: 100px;
 }
 
