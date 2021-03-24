@@ -51,11 +51,11 @@
 		</nav>
 
 		<main>
-			<h1 class="mb-30">New Co-Count</h1>
+			<h1 class="mb-30">Request sent</h1>
 
-			<div class="form-group mb-30">
-				<label class="col-form-label" for="input0">What's your Co-Count called?</label>
-				<input type="text" class="form-control" placeholder="Me and the other half" id="input0" />
+			<div class="alert alert-dismissible alert-success mb-30">
+				<button type="button" class="close" data-dismiss="alert">&times;</button>
+				<strong>Success!</strong> Your request to create a Co-Count "Me and other half" has been sent to Archie.</a>.
 			</div>
 
 			<div class="card bg-light mb-3">
@@ -63,19 +63,18 @@
 				<div class="card-body">
 					<div class="form-group split-group">
 						<label class="col-form-label" for="input1">My contribution:</label>
-						<input type="text" class="form-control" placeholder="50" id="input1" max="100" />
+						<p id="split1Value"></p>
 					</div>
 					<div class="form-group split-group">
 						<label class="col-form-label" for="input2">Archie's contribution</label>
-						<input type="text" class="form-control" placeholder="50" id="input2" max="100" />
+						<p id="split2Value"></p>
 					</div>
 				</div>
 				<canvas id="myChart" width="400" height="200"></canvas>
 			</div>
 
 			<div class="buttons">
-				<button type="button" class="btn btn-danger">Cancel</button>
-				<a href="step4b.html" class="btn btn-success float-right">Confirm & Send request &raquo;</a>
+				<a href="dashboard.html" class="btn btn-success float-right">Dashboard &raquo;</a>
 			</div>
 		</main>
 
@@ -83,11 +82,14 @@
 		<script src="js/scripts.js"></script>
 
 		<script>
-			var input1 = document.getElementById("input1");
-			var input2 = document.getElementById("input2");
+			var split1Value = document.getElementById("split1Value");
+			var split2Value = document.getElementById("split2Value");
+			
+			var split1 = sessionStorage.getItem("split1");
+			var split2 = sessionStorage.getItem("split2");
 
-			var split1 = 50;
-			var split2 = 50;
+			split1Value.innerHTML = split1 + '%';
+			split2Value.innerHTML = split2 + '%';
 
 			var ctx = document.getElementById("myChart").getContext("2d");
 			var myChart = new Chart(ctx, {
@@ -116,45 +118,8 @@
 				},
 			});
 
-			function addData(chart, data) {
-				chart.data.datasets.forEach((dataset) => {
-					dataset.data = data;
-				});
-				chart.update();
-			}
 
-			input1.addEventListener("input", function (event) {
-				if (event.target.value > 100) {
-					split1 = 100;
-					split2 = 0;
-					input1.value = split1;
-					input2.value = split2;
-				} else {
-					split1 = Number(event.target.value);
-					split2 = Number(100 - event.target.value);
-					input2.value = split2;
-				}
-				console.log(split1, split2);
-				addData(myChart, [split1, split2]);
-				sessionStorage.setItem("split1", split1);
-				sessionStorage.setItem("split2", split2);
-			});
 
-			input2.addEventListener("input", function (event) {
-				if (event.target.value > 100) {
-					split2 = 100;
-					split1 = 0;
-					input1.value = split1;
-					input2.value = split2;
-				} else {
-					split2 = Number(event.target.value);
-					split1 = Number(100 - event.target.value);
-					input1.value = split1;
-				}
-				addData(myChart, [split1, split2]);
-				sessionStorage.setItem("split1", split1);
-				sessionStorage.setItem("split2", split2);
-			});
 		</script>
 	</body>
 </html>

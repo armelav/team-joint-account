@@ -44,10 +44,7 @@ main {
 }
 
 #myChart {
-	margin-bottom: 20px;
-	width: 250px !important;
-	height: 250px !important;
-	text-align: center;
+	margin: -20px auto 20px auto;
 }
 
 .hidden {
@@ -56,4 +53,13 @@ main {
 
 .expandable-btn {
 	cursor: pointer;
+}
+
+.split-group {
+	width: 50%;
+	text-align: centre;
+	float: left;
+}
+.split-group input {
+	width: 100px;
 }
