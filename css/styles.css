@@ -79,13 +79,21 @@ main {
 	padding-left: 30%;
 }
 
+.bottom-buttons.icons button, .bottom-buttons.icons button span{
+	color: #251605;
+}
+
 .bottom-buttons.icons button {
 	background-color: #fff;
 }
 
 .bottom-buttons.icons button.selected {
 	border-bottom: 2px solid;
-	color: #3498db;
+	color: #307351;
+}
+
+.bottom-buttons.icons button.selected span{
+	color: #307351;
 }
 
 .bottom-buttons.icons button:hover {
@@ -185,4 +193,8 @@ table.historyTable td {
 }
 .container img {
 	vertical-align: middle;
+}
+
+.bg-primary {
+	background-color: #251605 !important;
 }
