@@ -34,7 +34,7 @@ main {
 	left: 0;
 	bottom: 0;
 	width: 100%;
-	padding: 30px 40px 40px 40px;
+	padding: 20px 40px 20px 40px;
 	background: white;
 }
 
@@ -81,6 +81,12 @@ main {
 
 .bottom-buttons.icons button {
 	background-color: #fff;
+	margin-left: 12px;
+}
+
+.bottom-buttons.icons button:first-child {
+	background-color: #fff;
+	margin-left: 0;
 }
 
 .bottom-buttons.icons button.selected {
@@ -102,6 +108,8 @@ main {
 
 .navbar {
 	padding: 0.5rem 1rem;
+}
+
 .btn-dashboard {
 	width: 49%;
 	display: inline-block;
@@ -183,4 +191,8 @@ table.historyTable td {
 }
 .container img {
 	vertical-align: middle;
+}
+
+body.withStickyFooter {
+	padding-bottom: 80px;
 }

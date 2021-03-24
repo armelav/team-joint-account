@@ -10,7 +10,7 @@
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 	</head>
 
-	<body>
+	<body class="withStickyFooter">
 		<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
 			<img src="images/cocoa_cropped.png" height="30px" alt="Cocoa"/>
 			
@@ -54,7 +54,10 @@
 			<h5>My Co-counts</h5>
 			<div class="card bg-light mb-3">
 				<div class="card-header">
-					<h3 class="expandable-btn" data-id="account1">Me and the other half</h3>
+					<h3 class="expandable-btn" data-id="account1">
+						<span class="material-icons md-18 expandable-btn" style="position:relative; top:3px" data-id="account1">keyboard_arrow_down</span>
+						Me and the other half
+					</h3>
 				</div>
 
 				<div class="card-body expandable-content hidden" id="account1">
@@ -70,6 +73,10 @@
 								<option>6 months</option>
 							</select>
 						</div>
+					</div>
+
+					<div class="mb-20">
+						<img src="images/DashboardChart.png" alt="" style="width:100%" />
 					</div>
 
 					<table class="historyTable">
@@ -107,8 +114,8 @@
 
 			<div class="bottom-buttons icons">				
 				<button onclick="location.href='dashboard.html'" type="button" class="link no-border selected"><span class="material-icons">&#xea44;</span><br />Home</button>
-				<button onclick="location.href='step2.html'" type="button" class="link no-border"><span class="material-icons">&#xe147;</span><br />New</button>
-				<button type="button" class="link no-border"><span class="material-icons">&#xe0c6;</span><br />Help</button>
+				<button onclick="location.href='step2.html'" type="button" class="link no-border"><span class="material-icons" style="position:relative; top:1px;">&#xe147;</span><br />New</button>
+				<button type="button" class="link no-border"><span class="material-icons" style="position:relative; top:2px;">&#xe0c6;</span><br />Help</button>
 			</div>
 		</main>
 
