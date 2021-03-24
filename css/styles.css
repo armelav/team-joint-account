@@ -75,6 +75,33 @@ main {
 	font-size: 14px;
 }
 
+.bottom-buttons.icons {
+	padding-left: 30%;
+}
+
+.bottom-buttons.icons button {
+	background-color: #fff;
+}
+
+.bottom-buttons.icons button.selected {
+	border-bottom: 2px solid;
+	color: #3498db;
+}
+
+.bottom-buttons.icons button:hover {
+	border-bottom: 2px solid;
+}
+
+.bottom-buttons.icons .material-icons {
+	font-size: 30px;
+}
+
+.no-border {
+	border: none;
+}
+
+.navbar {
+	padding: 0.5rem 1rem;
 .btn-dashboard {
 	width: 49%;
 	display: inline-block;
