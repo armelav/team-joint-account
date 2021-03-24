@@ -206,6 +206,21 @@ body.withStickyFooter {
 	padding-bottom: 80px;
 }
 
+.jumbotron a {
+	font-size: 16px;
+}
+
+
+/* general background colours */
+.bg-medium {
+	background-color: #e1b7b7;
+}
+.bg-light {
+	background-color: #f3e7e7 !important;
+}
 .bg-primary {
 	background-color: #251605 !important;
+}
+.card-header, .card-body {
+	color: #251605;
 }
