@@ -7,8 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="css/bootstrap.css" />
 		<link rel="stylesheet" href="css/styles.css" />
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-		rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	</head>
 
 	<body>
@@ -45,6 +44,41 @@
 		</nav>
 
 		<main>
+			<div class="card text-white bg-secondary mb-40" >
+				<div class="card-header">My Cocoa Balance</div>
+				<div class="card-body">
+					<h4 class="card-title">£1250.00</h4>
+				</div>
+			</div>
+
+			<h5>My Co-counts</h5>
+			<div class="card bg-light mb-3" >
+				<div class="card-header expandable-btn" data-id="account1"><h3>Me and the other half </h3></div>
+				<div class="card-body expandable-content hidden" id="account1">
+					<p class="card-text">
+					<div style="width:100%; display:inline-block">
+						<div style="width:70%;float: left; margin-top: 2%;">Upcoming payments in the next:</div>
+						<div style="width:30%;float: left;">
+							<select class="form-control" id="timeframe">
+								<option>30 days</option>
+								<option>week</option>
+								<option>3 months</option>
+								<option>6 months</option>
+							</select>
+						</div>
+					</div>
+					
+					<div style="width:100%; display:inline-block">
+						<div style="width:50%;float: left; margin-top: 10%;">
+							<button type="button dark" class="link"><span class="material-icons">&#xe935;</span>View History</button>
+						</div>
+						<div style="width:50%; float:left; margin-top: 10%;"><button type="button" class="link"><span
+									class="material-icons">&#xe003;</span>Ping Archie</button></div>
+					</div>
+					</p>
+				</div>
+			</div>
+
 			<div class="bottom-buttons icons">				
 				<button onclick="location.href='dashboard.html'" type="button" class="link no-border selected"><span class="material-icons">&#xea44;</span><br />Home</button>
 				<button onclick="location.href='step2.html'" type="button" class="link no-border"><span class="material-icons">&#xe147;</span><br />New</button>
@@ -54,5 +88,6 @@
 
 		<!-- keep at the bottom -->
 		<script src="js/scripts.js"></script>
+
 	</body>
 </html>
