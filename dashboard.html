@@ -7,6 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="css/bootstrap.css" />
 		<link rel="stylesheet" href="css/styles.css" />
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	</head>
 
 	<body>
@@ -61,13 +62,31 @@
 
 			<h5>My Co-counts</h5>
 			<div class="card bg-light mb-3" >
-				<div class="card-header expandable-btn" data-id="account1"">Me and the other half</div>
+				<div class="card-header expandable-btn" data-id="account1"><h3>Me and the other half </h3></div>
 				<div class="card-body expandable-content hidden" id="account1">
-					<h4 class="card-title">£1250.00</h4>
-					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					<p class="card-text">
+					<div style="width:100%; display:inline-block">
+						<div style="width:70%;float: left; margin-top: 2%;">Upcoming payments in the next:</div>
+						<div style="width:30%;float: left;">
+							<select class="form-control" id="timeframe">
+								<option>30 days</option>
+								<option>week</option>
+								<option>3 months</option>
+								<option>6 months</option>
+							</select>
+						</div>
+					</div>
+					
+					<div style="width:100%; display:inline-block">
+						<div style="width:50%;float: left; margin-top: 10%;">
+							<button type="button dark" class="link"><span class="material-icons">&#xe935;</span>View History</button>
+						</div>
+						<div style="width:50%; float:left; margin-top: 10%;"><button type="button" class="link"><span
+									class="material-icons">&#xe003;</span>Ping Archie</button></div>
+					</div>
+					</p>
 				</div>
 			</div>
-
 
 			<div class="bottom-buttons">
 				<button type="button" class="link">Home</button>
