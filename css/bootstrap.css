@@ -78,7 +78,7 @@ body {
 	font-size: 0.9375rem;
 	font-weight: 400;
 	line-height: 1.5;
-	color: #212529;
+	color: #251605;
 	text-align: left;
 	background-color: #fff;
 }
@@ -4678,6 +4678,10 @@ input[type="button"].btn-block {
 	background: 50% / 100% 100% no-repeat;
 }
 
+.navbar-toggler {
+	float: right;
+}
+
 .navbar-nav-scroll {
 	max-height: 75vh;
 	overflow-y: auto;
@@ -7182,10 +7186,6 @@ a.bg-danger:focus,
 button.bg-danger:hover,
 button.bg-danger:focus {
 	background-color: #d62c1a !important;
-}
-
-.bg-light {
-	background-color: #ecf0f1 !important;
 }
 
 a.bg-light:hover,
